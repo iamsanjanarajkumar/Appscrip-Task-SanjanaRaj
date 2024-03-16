@@ -1,38 +1,368 @@
-.App {
-  text-align: center;
-}
+/* Marquee */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.backGround{
+  background-color: black;
+  color: #ff0000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.marquee{
   display: flex;
-  flex-direction: column;
+  gap: 80px;
+}
+.bi-apple{
+  margin-right: 5px;
+}
+
+/* Navbar */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  margin: 0px 60px 0px 80px;
+}
+.logo>i{
+  font-size: 50px;
+  margin-right: 80px;
+}
+.icons>i{
+  margin-right: 20px;
+}
+.icons>span{
+  font-weight: bold;
+}
+.shop{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 50px;
+  font-weight: bold;
+}
+hr{
+  border: none;
+  height: 1px;
+  background-color: #8a8988 !important;
+}
+
+/* display none */
+
+.home{
+  display: none;
+}
+.divider{
+  display: none;
+}
+.showfilter1{
+  display: none;
+}
+.navbar1{
+  display: none;
+}
+.hidden{
+  display: none;
+}
+.hidden1{
+  display: none;
+}
+.hidden2{
+  display: none;
+}
+.flex1{
+  display: none;
+}
+
+/* Discover */
+
+.discover>div{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+}
+.discover>p{
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 150px;
+  line-height: 2rem;
+}
+
+/* items */
+
+.items{
+  margin: 0px 50px 0px 50px;
+  position : relative;
+}
+.hr1{
+  border: none;
+  height: 1px;
+  background-color: #e0ddd9 !important;
+}
+.count>p{
+  font-weight: bold;
+  font-size: large;
+  /* margin: 30px 0px 30px 0px; */
+}
+.itemspoint{
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+.itemsend{
+  display: flex;
+  justify-content: space-between;
+}
+.maincontent{
+  display: flex;
+  justify-content: space-between;
+  position : relative;
+  z-index : 2;
+}
+.content{
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  width: 200px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  z-index: 1;
+}
+.content:nth-child(2){
+  text-align: end;
+  position: absolute;
+  top: 0%;
+  left: 85%;
+  width: 15%;
+  margin-right: 2px;
+}
+.content>p{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content>div>p{
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.content-down{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 5px;
+}
+.content>li{
+  text-decoration: none;
+}
+.bi-check{
+  font-weight: bold;
+  font-size: 15px;
+}
+.content>p>i{
+  margin-right: 2px;
+}
+.show{
+  max-height: auto;
+}
+.hide{
+  max-height: 0;
+  /* display : none; */
+}
+.showfilter{
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #808080;
+  cursor: pointer;
+}
+.showfilter>p{
+  margin-bottom: 20px;
+}
+.showfilter>p>i{
+  margin-right: 7px;
+}
+.recommended{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.recommended>p{
+  font-weight: bold;
+}
+.recommended>p>i{
+  margin-left: 7px;
+}
+
+/* products */
+
+.products{
+  margin: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardproducts{
+  flex: 0 0 calc(25% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border: 0px solid #ccc;
+  overflow: hidden;
+}
+.cardproducts>img{
+  width: 100%;
+  height: 350px;
+}
+.cardproducts div{
+  padding: 10px;
+}
+.cardproducts h2{
+  margin: 0;
+}
+.cardproducts p{
+  margin: 5px 0;
+}
+.cardheart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer */
+
+.mainfooter{
+  background-color: black;
+  color: #fff;
+  /* margin: 20px 20px; */
+}
+.mainfooter>.fisrtfooter{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 80px;
+}
+.signfooter, .contactfooter{
+  margin: 50px 0px 0px 0px;
+}
+.signfooter>p{
+  margin-bottom: 40px;
+}
+.knowfooter{
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+.inputfooter>input{
+  margin-right: 10px;
+  border: none;
+  height: 30px;
+  width: 300px;
+  outline: none;
+}
+.inputfooter>input::placeholder{
+  font-size: 15px;
+  word-spacing: 2px;
+}
+.btnfooter{
+  border: 1px solid grey;
+  background-color: transparent;
+  color: grey;
+  height: 35px;
+  width: 130px;
+  border-radius: 5px;
+}
+.btnfooter:hover{
+  background-color: white;
+  color: black;
+}
+.cusfooter>div:nth-child(1), .currencyfooter>div:nth-child(1), .mettafooter>h5, .quickfooter>h5, .followusfooter>h5, .accepfooter>h5{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+.cusfooter>div:nth-child(2){
+  line-height: 40px;
+}
+.cusfooter>div:nth-child(2),.cusfooter>div:nth-child(3),.currencyfooter>p{
+  color: gray;
+}
+.currencyfooter>div:nth-child(1){
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.currencyfooter>div:nth-child(2){
+  text-transform: uppercase;
+  font-weight: bold;
+  /* margin-left: 10px; */
+  word-spacing: 10px;
+}
+.imgfooter{
+  height: 20px;
+  border-radius: 50%;
+  width: 20px;
+  position: relative;
+  top: 5px;
+}
+.hr2{
+  margin: 0px 80px;
+  border: none;
+  height: 1px;
+  background-color: #8a8988 !important;
+}
+.secondfooter{
+  margin: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.mettafooter>li,.quickfooter>li{
+  list-style-type: none;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+.quickfooter{
+  margin-bottom: 40px;
+}
+.followusfooter>li{
+  list-style-type: none;
+}
+.followusfooter>li .circle{
+  display: flex;
+}
+.followusfooter>li>div>div{
+  width: 25px;
+  height: 25px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 0px 5px 0px 0px;
+}
+.followusfooter>li>div>div>i{
+  position: relative;
+  top: 2px;
+  left: 4.5px;
+}
+.imagefooter{
+  display: flex;
+}
+.imagefooter>li{
+  list-style-type: none;
+  margin: 0px 10px 0px 0px;
+  background-color: white;
+  border-radius: 2px;
+}
+.imagefooter>li>img{
+  height: 25px;
+  width: 55px;
+  align-items: center;
+  object-fit: contain;
+}
+.accepfooter{
+  position: relative;
+  left: 34px;
+}
+
+/* copyfooter */
+
+.copyfooter>p{
+  background-color: black;
   color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* margin: 20px; */
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.copyfooter>div{
+  color: black;
 }
