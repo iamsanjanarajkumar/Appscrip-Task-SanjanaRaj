@@ -4,6 +4,7 @@ import Navigation from './components/Navigation'
 import Discover from './components/Discover'
 import FilterItems from './components/FilterItems'
 import ProductsDisplay from './components/ProductsDisplay'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
      <Discover/>
      <FilterItems/>
      <ProductsDisplay/>
+     <Footer/>
     </div>
   )
 }
